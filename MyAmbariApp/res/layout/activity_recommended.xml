@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/ambari_bg"
+    tools:context="com.example.myambariapp.RecommendedActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recommended" />
+    
+    <GridLayout
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+        
+        <ImageView
+	            android:id="@+id/image_rec_act1"
+	            android:layout_width="90dp"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="10dp"
+	            android:gravity="center"
+	            android:src="@drawable/ellie"/>
+        
+        <ImageView
+	            android:id="@+id/image_rec_act2"
+	            android:layout_width="90dp"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginTop="10dp"
+	            android:gravity="center"
+	            android:src="@drawable/ellie"/>
+        
+        <ImageView
+	            android:id="@+id/image_rec_act3"
+	            android:layout_width="90dp"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginTop="10dp"
+	            android:gravity="center"
+	            android:src="@drawable/ellie"/>
+        
+        <ImageView
+	            android:id="@+id/image_rec_act4"
+	            android:layout_width="90dp"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="10dp"
+	            android:gravity="center"
+	            android:src="@drawable/ellie"/>
+        
+        <ImageView
+	            android:id="@+id/image_rec_act5"
+	            android:layout_width="90dp"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginTop="10dp"
+	            android:gravity="center"
+	            android:src="@drawable/ellie"/>
+        
+        <ImageView
+	            android:id="@+id/image_rec_act6"
+	            android:layout_width="90dp"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginTop="10dp"
+	            android:gravity="center"
+	            android:src="@drawable/ellie"/>
+        
+        <ImageView
+	            android:id="@+id/image_rec_act7"
+	            android:layout_width="90dp"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="10dp"
+	            android:gravity="center"
+	            android:src="@drawable/ellie"/>
+        
+        <ImageView
+	            android:id="@+id/image_rec_act8"
+	            android:layout_width="90dp"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginTop="10dp"
+	            android:gravity="center"
+	            android:src="@drawable/ellie"/>
+        
+        <ImageView
+	            android:id="@+id/image_rec_act9"
+	            android:layout_width="90dp"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginTop="10dp"
+	            android:gravity="center"
+	            android:src="@drawable/ellie"/>
+        
+    </GridLayout>
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/ambari_bg"
+    tools:context="com.example.myambariapp.HomeFragment" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content">
+    	
+        <!-- Tulisan "RECOMMENDED" di bagian atas halaman -->
+        <TextView
+	            android:id="@+id/recommended_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/recommended"
+		        android:clickable="true"
+		        android:onClick="redirectRecommended" />
+        
+        <!-- Bagian gambar Recommended Area -->
+        <RelativeLayout
+            android:id="@+id/recommended_area"
+            android:background="@color/off_white"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginTop="10dp"
+    		android:layout_below="@+id/recommended_text">
+    		
+            <ImageView
+	            android:id="@+id/image_rec1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginTop="10dp"
+	            android:gravity="center"
+	            android:src="@drawable/rec1"/>
+            
+            <ImageView
+	            android:id="@+id/image_rec2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginTop="10dp"
+	            android:gravity="center"
+	            android:src="@drawable/rec2" 
+	            android:layout_below="@+id/image_rec1"/>
+            
+            <ImageView
+	            android:id="@+id/image_rec3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginBottom="10dp"
+	            android:gravity="center"
+	            android:src="@drawable/rec3"
+	            android:layout_below="@+id/image_rec2" />
+        </RelativeLayout>
+        
+        <!-- Tulisan "WHAT'S NEW" di bagian atas halaman -->
+        <TextView
+            android:id="@+id/whats_new_text"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"	        
+			android:text="@string/whats_new"
+			android:layout_marginTop="30dp"
+			android:layout_below="@+id/recommended_area" />
+        
+        <!-- Bagian gambar What's New Area -->
+        <RelativeLayout
+            android:id="@+id/whats_new_area"
+            android:background="@color/off_white"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginTop="10dp"
+    		android:layout_below="@+id/whats_new_text">
+            
+			<ImageView
+	            android:id="@+id/image_wn1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginTop="10dp"
+	            android:gravity="center"
+	            android:src="@drawable/wn1"
+	            />
+            
+            <ImageView
+	            android:id="@+id/image_wn2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginTop="10dp"
+	            android:gravity="center"
+	            android:src="@drawable/rec2" 
+	            android:layout_below="@+id/image_wn1"/>
+            
+            <ImageView
+	            android:id="@+id/image_wn3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginBottom="10dp"
+	            android:gravity="center"
+	            android:src="@drawable/rec3"
+	            android:layout_below="@+id/image_wn2" />
+                        
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
