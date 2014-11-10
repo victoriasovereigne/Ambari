@@ -63,6 +63,7 @@
 	            android:gravity="center"
 	            android:src="@drawable/rec3"
 	            android:layout_below="@+id/image_rec2" />
+            
         </RelativeLayout>
         
         <!-- Tulisan "WHAT'S NEW" di bagian atas halaman -->
@@ -72,7 +73,9 @@
 		    android:layout_height="wrap_content"	        
 			android:text="@string/whats_new"
 			android:layout_marginTop="30dp"
-			android:layout_below="@+id/recommended_area" />
+			android:layout_below="@+id/recommended_area"
+			android:clickable="true"
+			android:onClick="redirectWhatsNew" />
         
         <!-- Bagian gambar What's New Area -->
         <RelativeLayout

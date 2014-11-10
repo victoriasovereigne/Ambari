@@ -5,14 +5,37 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_home">Home</string>
+    <string name="title_activity_cart">Cart</string>
     <string name="action_search">Search</string>
+    
     <string name="recommended">RECOMMENDED</string>
     <string name="whats_new">WHAT\'S NEW</string>
+    <string name="my_shopping_cart">MY SHOPPING CART</string>
+    
+    
     <string name="title_activity_main">MainActivity</string>
     <string name="title_section1">Home</string>
     <string name="title_section2">Cart</string>
     <string name="title_section3">Store</string>
     <string name="title_section4">Chat</string>
     <string name="title_activity_recommended">RecommendedActivity</string>
+    <string name="title_activity_nav">NavActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_my">MyActivity</string>
+    
+	<string-array name="drawer_titles">
+        <item>Tabs</item>
+        <item>WebView</item>
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_item_one">ItemOne</string>    
+    <string name="title_activity_tabbed">TabbedActivity</string>
 
 </resources>

@@ -46,6 +46,40 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.myambariapp.MainActivity" />
         </activity>
+        <activity
+            android:name=".NavActivity"
+            android:label="@string/title_activity_nav"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myambariapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myambariapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_fullscreen"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/FullscreenTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myambariapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MyActivity"
+            android:label="@string/title_activity_my"
+            android:parentActivityName=".LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myambariapp.LoginActivity" />
+        </activity>
     </application>
 
 </manifest>

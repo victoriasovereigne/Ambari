@@ -21,7 +21,7 @@ import android.view.ViewGroup;
  * Halaman utama app, memiliki 4 tab
  * 
  * @author V Anugrah
- *
+ * 
  */
 public class MainActivity extends Activity implements ActionBar.TabListener {
 
@@ -99,11 +99,29 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	
+
 	// Method untuk redirect ke halaman Recommended
-	public void redirectRecommended(View view){
+	public void redirectRecommended(View view) {
 		Intent intent = new Intent(this, RecommendedActivity.class);
-	    startActivity(intent);
+		startActivity(intent);
+	}
+
+	// Method untuk redirect ke halaman What's New
+	public void redirectWhatsNew(View view) {
+		Intent intent = new Intent(this, NavActivity.class);
+		startActivity(intent);
+	}
+
+	// Method untuk redirect ke halaman What's New
+	public void redirectNavDrawer(View view) {
+		Intent intent = new Intent(this, NavActivity.class);
+		startActivity(intent);
+	}
+
+	// Method untuk redirect ke halaman What's New
+	public void redirectFullScreen(View view) {
+		Intent intent = new Intent(this, FullscreenActivity.class);
+		startActivity(intent);
 	}
 
 	@Override
@@ -141,13 +159,19 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
 			// below).
 			switch (position) {
 			case 0:
-				return HomeFragment.newInstance(position + 1); // pindah ke tab Home
+				return HomeFragment.newInstance(position + 1); // pindah ke tab
+																// Home
 			case 1:
-				return CartFragment.newInstance(position + 1); // pindah ke tab Cart
+				return CartFragment.newInstance(position + 1); // pindah ke tab
+																// Cart
 			case 2:
-				return CartFragment.newInstance(position + 1); // pindah ke tab Store (belum dibuat)
+				return CartFragment.newInstance(position + 1); // pindah ke tab
+																// Store (belum
+																// dibuat)
 			case 3:
-				return CartFragment.newInstance(position + 1); // pindah ke tab Chat (belum dibuat)
+				return CartFragment.newInstance(position + 1); // pindah ke tab
+																// Chat (belum
+																// dibuat)
 			}
 			return null;
 		}
