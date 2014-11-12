@@ -50,13 +50,13 @@ public class LoginActivity extends Activity {
 	 */
 	public void redirectHome(View view){
 		// Membuat Intent yang redirect ke MainActivity
-		Intent intent = new Intent(this, MainActivity.class);
+		Intent intent = new Intent(this, MyActivity.class);
 	    startActivity(intent);
 	}
 	
 	public void redirectMy(View view){
 		// Membuat Intent yang redirect ke MainActivity
-		Intent intent = new Intent(this, MyActivity.class);
+		Intent intent = new Intent(this, MainActivity.class);
 	    startActivity(intent);
 	}
 }

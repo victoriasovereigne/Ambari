@@ -29,13 +29,14 @@
     <string name="title_activity_my">MyActivity</string>
     
 	<string-array name="drawer_titles">
-        <item>Tabs</item>
-        <item>WebView</item>
+        <item>DASHBOARD</item>
+        <item>FAVORITES</item>
+        <item>TRANSACTIONS</item>
+        <item>OPTIONS</item>
     </string-array>
 
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
     <string name="title_activity_item_one">ItemOne</string>    
     <string name="title_activity_tabbed">TabbedActivity</string>
-
 </resources>

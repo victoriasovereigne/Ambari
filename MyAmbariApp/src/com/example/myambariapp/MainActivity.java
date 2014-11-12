@@ -11,11 +11,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 
 /**
  * Halaman utama app, memiliki 4 tab
@@ -108,20 +106,20 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
 
 	// Method untuk redirect ke halaman What's New
 	public void redirectWhatsNew(View view) {
-		Intent intent = new Intent(this, NavActivity.class);
-		startActivity(intent);
+//		Intent intent = new Intent(this, NavActivity.class);
+//		startActivity(intent);
 	}
 
 	// Method untuk redirect ke halaman What's New
 	public void redirectNavDrawer(View view) {
-		Intent intent = new Intent(this, NavActivity.class);
-		startActivity(intent);
+//		Intent intent = new Intent(this, NavActivity.class);
+//		startActivity(intent);
 	}
 
 	// Method untuk redirect ke halaman What's New
 	public void redirectFullScreen(View view) {
-		Intent intent = new Intent(this, FullscreenActivity.class);
-		startActivity(intent);
+//		Intent intent = new Intent(this, FullscreenActivity.class);
+//		startActivity(intent);
 	}
 
 	@Override
@@ -159,16 +157,20 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
 			// below).
 			switch (position) {
 			case 0:
+				getActionBar().setTitle("HOME");
 				return HomeFragment.newInstance(position + 1); // pindah ke tab
 																// Home
 			case 1:
+				getActionBar().setTitle("CART");
 				return CartFragment.newInstance(position + 1); // pindah ke tab
 																// Cart
 			case 2:
+				getActionBar().setTitle("STORE");
 				return CartFragment.newInstance(position + 1); // pindah ke tab
 																// Store (belum
 																// dibuat)
 			case 3:
+				getActionBar().setTitle("CHAT");
 				return CartFragment.newInstance(position + 1); // pindah ke tab
 																// Chat (belum
 																// dibuat)

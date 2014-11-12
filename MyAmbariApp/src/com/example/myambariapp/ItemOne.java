@@ -45,10 +45,9 @@ public class ItemOne extends Fragment {
 	public void onViewCreated(View view, Bundle savedInstanceState) {
 		super.onViewCreated(view, savedInstanceState);
 		
-		PagerTitleStrip tabs = (PagerTitleStrip) view.findViewById(R.id.pager_title_strip);
+		PagerTitleStrip tabs = (PagerTitleStrip) view.findViewById(R.id.pager);
 		ViewPager pager = (ViewPager) view.findViewById(R.id.pager);
 		pager.setAdapter(mPagerAdapter);
-
 	}
 	
 	public class ItemOnePagerAdapter extends FragmentPagerAdapter {
